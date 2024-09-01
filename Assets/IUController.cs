@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +12,7 @@ public class IUController : MonoBehaviour
     public SpineObject spine = null;
     public Slider[] sliders;
     public string status;
+    public GameObject segmentPrefab;
     void Start()
     {
         status = "scale";
@@ -89,25 +91,54 @@ public class IUController : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit hit;
+            
             if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit))
             {
-                spine = hit.transform.GetComponentInParent<SpineObject>();
-                if (status == "scale")
+                Debug.Log(hit.transform.parent.name);
+                if (hit.transform.parent.name == "Spine") {
+                    spine = hit.transform.GetComponentInParent<SpineObject>();
+                    if (status == "scale")
+                    {
+                        sliders[0].SetValueWithoutNotify(spine.radiousX);
+                        sliders[1].SetValueWithoutNotify(spine.radiousY);
+                        sliders[2].SetValueWithoutNotify(spine.radiousZ);
+                        sliders[3].SetValueWithoutNotify(spine.scale);
+                    }
+                    else if (status == "rotation")
+                    {
+                        sliders[0].SetValueWithoutNotify(spine.rotationX);
+                        sliders[1].SetValueWithoutNotify(spine.rotationY);
+                        sliders[2].SetValueWithoutNotify(spine.rotationZ);
+                        sliders[3].SetValueWithoutNotify(spine.scale);
+                    }
+                } else if (hit.transform.parent.name == "AddNextSeg")
                 {
-                    sliders[0].SetValueWithoutNotify(spine.radiousX);
-                    sliders[1].SetValueWithoutNotify(spine.radiousY);
-                    sliders[2].SetValueWithoutNotify(spine.radiousZ);
-                    sliders[3].SetValueWithoutNotify(spine.scale);
-                }
-                else if (status == "rotation")
+                    Transform segmentParent = hit.transform.parent.parent;
+
+                    SpineController controllerHit = segmentParent.GetComponent<SpineController>();
+                    Vector3 position = segmentParent.GetChild(1).position;
+                    GameObject newSegment = Instantiate(segmentPrefab, segmentParent.position + new Vector3(0, 7, 0), Quaternion.identity, segmentParent.parent);
+                    SpineController controllerNew = newSegment.GetComponent<SpineController>();
+                    controllerNew.changePositionOfSpine(false, position);
+                    controllerNew.previousSegment = controllerHit;
+                    controllerHit.nextSegment = controllerNew;
+
+                } else if (hit.transform.parent.name == "AddPrevSeg")
                 {
-                    sliders[0].SetValueWithoutNotify(spine.rotationX);
-                    sliders[1].SetValueWithoutNotify(spine.rotationY);
-                    sliders[2].SetValueWithoutNotify(spine.rotationZ);
-                    sliders[3].SetValueWithoutNotify(spine.scale);
+                    Transform segmentParent = hit.transform.parent.parent;
+
+                    SpineController controllerHit = segmentParent.GetComponent<SpineController>();
+                    Vector3 position = segmentParent.GetChild(4).position;
+                    GameObject newSegment = Instantiate(segmentPrefab, segmentParent.position + new Vector3(0, -7, 0), Quaternion.identity, segmentParent.parent);
+                    SpineController controllerNew = newSegment.GetComponent<SpineController>();
+                    controllerNew.changePositionOfSpine(true, position);
+                    controllerNew.nextSegment = controllerHit;
+                    controllerHit.previousSegment = controllerNew;
                 }
-                
-               
+
+
+
+
 
             }
         }

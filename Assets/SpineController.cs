@@ -72,7 +72,7 @@ public class SpineController : MonoBehaviour
         {
             if (previousPositions[i] != controlPoints[i].position)
             {
-                Debug.Log("Detected change "+i);
+                
                 //t = 0.1f;
 
                 previousPositions[i] = controlPoints[i].position;
@@ -84,7 +84,7 @@ public class SpineController : MonoBehaviour
                 {
                     if (nextSegment != null)
                     {
-                        Debug.Log("Changing position");
+                        
                         nextSegment.changePositionOfSpine(false, controlPoints[i].position);
                     }
                 } else if (i == controlPoints.Length - 1)
