@@ -17,11 +17,15 @@ public class SpineController : MonoBehaviour
     public GameObject[] spines;
     public MarchingLogic marching;
 
+    public SpineController nextSegment = null;
+    public SpineController previousSegment = null;
+
     private int curveCount = 0;
     private int layerOrder = 0;
     private int SEGMENT_COUNT = 50;
     public int numberSpines = 4;
     private bool redraw= false;
+    private GameObject MarchingObject;
     
     
 
@@ -33,17 +37,32 @@ public class SpineController : MonoBehaviour
         {
             previousPositions[i] = controlPoints[i].position;
         }
-        marching = GetComponent<MarchingLogic>();
+        MarchingObject = GameObject.Find("MarchingCubes");
+        marching = MarchingObject.GetComponent<MarchingLogic>();
         BezierPoints = new Vector3[SEGMENT_COUNT];
 
         if (!lineRenderer)
         {
-            lineRenderer = GetComponent<LineRenderer>();
+            lineRenderer = MarchingObject.GetComponent<LineRenderer>();
         }
         lineRenderer.sortingLayerID = layerOrder;
         curveCount = (int)controlPoints.Length / 3;
         DrawCurve();
-        CreateSpines();
+        CreateSpines(true);
+    }
+
+     public void changePositionOfSpine(bool end,Vector3 position)
+    {
+        if (end)
+        {
+            controlPoints[0].position = position;
+            Debug.Log("position changed");
+        }
+        else
+        {
+            controlPoints[controlPoints.Length - 1].position = position;
+        }
+        
     }
 
     void Update()
@@ -53,14 +72,28 @@ public class SpineController : MonoBehaviour
         {
             if (previousPositions[i] != controlPoints[i].position)
             {
-
+                Debug.Log("Detected change "+i);
                 //t = 0.1f;
-                
+
                 previousPositions[i] = controlPoints[i].position;
                 
                 marching.needsRecalculation = true;
                 redraw = true;
                 //marching.GetChilds();
+                if (i == 0)
+                {
+                    if (nextSegment != null)
+                    {
+                        Debug.Log("Changing position");
+                        nextSegment.changePositionOfSpine(false, controlPoints[i].position);
+                    }
+                } else if (i == controlPoints.Length - 1)
+                {
+                    if (previousSegment != null)
+                    {
+                        previousSegment.changePositionOfSpine(true, controlPoints[i].position);
+                    }
+                }
                 break;
             }
 
@@ -68,7 +101,7 @@ public class SpineController : MonoBehaviour
         if (marching.t <= 0 && redraw)
         {
             DrawCurve();
-            CreateSpines();
+            CreateSpines(false);
             redraw = false;
         }
             
@@ -93,24 +126,37 @@ public class SpineController : MonoBehaviour
 
         }
     }
-    void CreateSpines()
+    void CreateSpines(bool isStart)
     {
-        foreach (GameObject spineObj in spines)
-        {
-            Destroy(spineObj);
-            
-        }
-        spines = new GameObject[numberSpines];
         int multi = Mathf.FloorToInt(SEGMENT_COUNT / numberSpines);
-        spines[0] = Instantiate(prefabSpine, BezierPoints[0], Quaternion.identity,transform);
-        for (int i = 1; i < numberSpines-1; i++)
+        if (isStart)
         {
-            spines[i] = Instantiate(prefabSpine, BezierPoints[(i+1)*multi], Quaternion.identity, transform);
-        }
-        spines[numberSpines-1] = Instantiate(prefabSpine, BezierPoints[SEGMENT_COUNT-1], Quaternion.identity, transform);
+            foreach (GameObject spineObj in spines)
+            {
+                Destroy(spineObj);
 
-        marching.GetChilds();
-        marching.needsRecalculation = true;
+            }
+            spines = new GameObject[numberSpines];
+            
+            spines[0] = Instantiate(prefabSpine, BezierPoints[0], Quaternion.identity, MarchingObject.transform);
+            for (int i = 1; i < numberSpines - 1; i++)
+            {
+                spines[i] = Instantiate(prefabSpine, BezierPoints[(i + 1) * multi], Quaternion.identity, MarchingObject.transform);
+            }
+            spines[numberSpines - 1] = Instantiate(prefabSpine, BezierPoints[SEGMENT_COUNT - 1], Quaternion.identity, MarchingObject.transform);
+
+            marching.GetChilds();
+            marching.needsRecalculation = true;
+        } else
+        {
+            spines[0].transform.position = BezierPoints[0];
+            for (int i = 1; i < numberSpines - 1; i++)
+            {
+                spines[i].transform.position = BezierPoints[(i + 1) * multi];
+            }
+            spines[numberSpines - 1].transform.position = BezierPoints[SEGMENT_COUNT - 1];
+        }
+        
 
     }
 
