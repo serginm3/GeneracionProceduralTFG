@@ -35,6 +35,12 @@ namespace MarchingCubes {
         public bool needsRecalculation= true;
 
         LineRenderer lr;
+
+        Vector3 point;
+        Matrix4x4 rotationMatrix;
+        Vector3 point2;
+        Vector3 ScaledVector;
+        float distance;
         // Start is called before the first frame update
 
         void Awake()
@@ -222,7 +228,10 @@ namespace MarchingCubes {
         void SetWeight()
         {
             weights = new float[surfaceArea + 1, surfaceHeight + 1, surfacewidth + 1];
-            
+            SpineObject spineComponent = null;
+
+
+
                 for (int x = 0; x < surfaceArea; x++) //the line the error is pointing to
                 {
                     for (int y = 0; y < surfaceHeight; y++) //the line the error is pointing to
@@ -232,25 +241,22 @@ namespace MarchingCubes {
                         
                         for (int i = 0; i < spines.Count; i++) {
 
-                            Vector3 point = new Vector3(x - spines[i].position.x, y - spines[i].position.y, z - spines[i].position.z);
-
-                            
-
-                            
-
-
-
+                            spineComponent = spines[i].GetComponent<SpineObject>();
+                            point = new Vector3(x - spines[i].position.x, y - spines[i].position.y, z - spines[i].position.z);
                             if (true){
-
-                                Matrix4x4 rotationMatrix = Matrix4x4.Rotate(Quaternion.Euler(spines[i].GetComponent<SpineObject>().rotationX, spines[i].GetComponent<SpineObject>().rotationY, spines[i].GetComponent<SpineObject>().rotationZ)).inverse;
-                                Vector3 point2 = rotationMatrix.MultiplyPoint3x4(point);
+                                if (spineComponent.rotationX != 0 || spineComponent.rotationY != 0 || spineComponent.rotationZ != 0)
+                                {
+                                    rotationMatrix = Matrix4x4.Rotate(Quaternion.Euler(spineComponent.rotationX, spineComponent.rotationY, spineComponent.rotationZ)).inverse;
+                                    point2 = rotationMatrix.MultiplyPoint3x4(point);
+                                } else
+                                {
+                                    point2 = point;
+                                }
+                                ScaledVector = new Vector3(point2.x / spineComponent.radiousX, point2.y / spineComponent.radiousY, point2.z / spineComponent.radiousZ);
 
                                 
-                                Vector3 ScaledVector = new Vector3(point2.x / spines[i].GetComponent<SpineObject>().radiousX, point2.y / spines[i].GetComponent<SpineObject>().radiousY, point2.z / spines[i].GetComponent<SpineObject>().radiousZ);
 
-                                
-
-                                float distance = spines[i].GetComponent<SpineObject>().scale - (ScaledVector).magnitude; //radio de la esfera
+                                distance = spineComponent.scale - (ScaledVector).magnitude; //radio de la esfera
                                 weights[x, y, z] = Mathf.Max(Mathf.Clamp(distance / 2f, 0, 1), weights[x, y, z]);
                             }else
                             {

@@ -62,12 +62,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\MarchingTable.cs" />
+    <Compile Include="Assets\BoneCreator.cs" />
     <Compile Include="Assets\SpineObject.cs" />
     <Compile Include="Assets\Scripts\MarchingSphere.cs" />
     <Compile Include="Assets\Scripts\BodyController.cs" />
     <Compile Include="Assets\IUController.cs" />
     <Compile Include="Assets\Scripts\MarchingLogic.cs" />
     <Compile Include="Assets\Scripts\ProceduralMeshController.cs" />
+    <Compile Include="Assets\NewBehaviourScript.cs" />
     <Compile Include="Assets\SpineController.cs" />
     <Compile Include="Assets\Scripts\CreatureGeneratorController1.cs" />
     <Compile Include="Assets\CameraLogic.cs" />

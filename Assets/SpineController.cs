@@ -136,25 +136,25 @@ public class SpineController : MonoBehaviour
                 Destroy(spineObj);
 
             }
-            spines = new GameObject[numberSpines];
+            spines = new GameObject[numberSpines+1];
             
             spines[0] = Instantiate(prefabSpine, BezierPoints[0], Quaternion.identity, MarchingObject.transform);
-            for (int i = 1; i < numberSpines - 1; i++)
+            for (int i = 1; i < numberSpines; i++)
             {
-                spines[i] = Instantiate(prefabSpine, BezierPoints[(i + 1) * multi], Quaternion.identity, MarchingObject.transform);
+                spines[i] = Instantiate(prefabSpine, BezierPoints[i * multi], Quaternion.identity, MarchingObject.transform);
             }
-            spines[numberSpines - 1] = Instantiate(prefabSpine, BezierPoints[SEGMENT_COUNT - 1], Quaternion.identity, MarchingObject.transform);
+            spines[numberSpines] = Instantiate(prefabSpine, BezierPoints[SEGMENT_COUNT - 2], Quaternion.identity, MarchingObject.transform);
 
             marching.GetChilds();
             marching.needsRecalculation = true;
         } else
         {
             spines[0].transform.position = BezierPoints[0];
-            for (int i = 1; i < numberSpines - 1; i++)
+            for (int i = 1; i < numberSpines; i++)
             {
-                spines[i].transform.position = BezierPoints[(i + 1) * multi];
+                spines[i].transform.position = BezierPoints[(i) * multi];
             }
-            spines[numberSpines - 1].transform.position = BezierPoints[SEGMENT_COUNT - 1];
+            spines[numberSpines].transform.position = BezierPoints[SEGMENT_COUNT - 2];
         }
         
 
