@@ -93,6 +93,7 @@ public class SpineController : MonoBehaviour
                     {
                         previousSegment.changePositionOfSpine(true, controlPoints[i].position);
                     }
+
                 }
                 break;
             }
@@ -139,11 +140,14 @@ public class SpineController : MonoBehaviour
             spines = new GameObject[numberSpines+1];
             
             spines[0] = Instantiate(prefabSpine, BezierPoints[0], Quaternion.identity, MarchingObject.transform);
+            spines[0].GetComponent<SpineObject>().partOf = transform.gameObject;
             for (int i = 1; i < numberSpines; i++)
             {
                 spines[i] = Instantiate(prefabSpine, BezierPoints[i * multi], Quaternion.identity, MarchingObject.transform);
+                spines[i].GetComponent<SpineObject>().partOf = transform.gameObject;
             }
             spines[numberSpines] = Instantiate(prefabSpine, BezierPoints[SEGMENT_COUNT - 2], Quaternion.identity, MarchingObject.transform);
+            spines[numberSpines].GetComponent<SpineObject>().partOf = transform.gameObject;
 
             marching.GetChilds();
             marching.needsRecalculation = true;

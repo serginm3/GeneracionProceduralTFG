@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6650030969296612255}
   m_Layer: 0
   m_Name: BezierControlPoint3
-  m_TagString: Untagged
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 1526899866855155993}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.88, y: -13.821423, z: -6.00844}
+  m_LocalPosition: {x: 4.1885805, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -53,6 +53,7 @@ MonoBehaviour:
   rotationX: 0
   rotationY: 0
   rotationZ: 0
+  partOf: {fileID: 0}
 --- !u!1 &2234731148586010328
 GameObject:
   m_ObjectHideFlags: 0
@@ -79,7 +80,7 @@ Transform:
   m_GameObject: {fileID: 2234731148586010328}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.74, y: -13.821423, z: -3.43}
+  m_LocalPosition: {x: 13.71858, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -106,6 +107,7 @@ MonoBehaviour:
   rotationX: 0
   rotationY: 0
   rotationZ: 0
+  partOf: {fileID: 0}
 --- !u!1 &2274182233916301898
 GameObject:
   m_ObjectHideFlags: 0
@@ -120,7 +122,7 @@ GameObject:
   - component: {fileID: 8260645306222128308}
   m_Layer: 6
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -398,7 +400,7 @@ GameObject:
   - component: {fileID: 7882421543489368295}
   m_Layer: 6
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -503,7 +505,7 @@ GameObject:
   - component: {fileID: 1144190345539767219}
   m_Layer: 0
   m_Name: BezierControlPoint2
-  m_TagString: Untagged
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -517,7 +519,7 @@ Transform:
   m_GameObject: {fileID: 6353320674355590982}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.82, y: -13.821423, z: -6.00844}
+  m_LocalPosition: {x: -3.5114198, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -544,6 +546,7 @@ MonoBehaviour:
   rotationX: 0
   rotationY: 0
   rotationZ: 0
+  partOf: {fileID: 0}
 --- !u!1 &6819629278709440769
 GameObject:
   m_ObjectHideFlags: 0
@@ -558,7 +561,7 @@ GameObject:
   - component: {fileID: 4559826288737058152}
   m_Layer: 6
   m_Name: Sphere (1)
-  m_TagString: Untagged
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -677,7 +680,7 @@ Transform:
   m_GameObject: {fileID: 7087108057263347171}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.078578, y: -13.821423, z: -3.72}
+  m_LocalPosition: {x: -12.77, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -704,6 +707,7 @@ MonoBehaviour:
   rotationX: 0
   rotationY: 0
   rotationZ: 0
+  partOf: {fileID: 0}
 --- !u!1 &7087666966031670840
 GameObject:
   m_ObjectHideFlags: 0
@@ -823,7 +827,7 @@ GameObject:
   - component: {fileID: 4568797163000855095}
   m_Layer: 0
   m_Name: BezierControlPoint4
-  m_TagString: Untagged
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -837,7 +841,7 @@ Transform:
   m_GameObject: {fileID: 7882444868428695771}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.41, y: -13.821423, z: -6.00844}
+  m_LocalPosition: {x: 10.71858, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -864,6 +868,7 @@ MonoBehaviour:
   rotationX: 0
   rotationY: 0
   rotationZ: 0
+  partOf: {fileID: 0}
 --- !u!1 &8021777544761169219
 GameObject:
   m_ObjectHideFlags: 0
@@ -876,7 +881,7 @@ GameObject:
   - component: {fileID: 5291176036321842993}
   m_Layer: 0
   m_Name: BezierControlPoint1
-  m_TagString: Untagged
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -890,7 +895,7 @@ Transform:
   m_GameObject: {fileID: 8021777544761169219}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.078578, y: -13.821423, z: -6.00844}
+  m_LocalPosition: {x: -9.769998, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -917,6 +922,7 @@ MonoBehaviour:
   rotationX: 0
   rotationY: 0
   rotationZ: 0
+  partOf: {fileID: 0}
 --- !u!1 &9022018206368193528
 GameObject:
   m_ObjectHideFlags: 0
@@ -931,7 +937,7 @@ GameObject:
   - component: {fileID: 8657637194584452180}
   m_Layer: 6
   m_Name: Sphere (1)
-  m_TagString: Untagged
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

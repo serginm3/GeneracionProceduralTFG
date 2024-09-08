@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TransformGizmos;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
@@ -13,6 +14,7 @@ public class IUController : MonoBehaviour
     public Slider[] sliders;
     public string status;
     public GameObject segmentPrefab;
+    public GizmoController gizmo;
     void Start()
     {
         status = "scale";
@@ -95,8 +97,37 @@ public class IUController : MonoBehaviour
             if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit))
             {
                 Debug.Log(hit.transform.parent.name);
-                if (hit.transform.parent.name == "Spine") {
+                if (hit.transform.parent.tag == "Selectable") {
+                    CameraLogic cameraScript = Camera.main.GetComponent<CameraLogic>();
+                    SpineObject spine = hit.transform.parent.GetComponent<SpineObject>();
+                    if (spine != null)
+                    {
+                        Debug.Log(spine.partOf);
+                        if (spine.partOf != null)
+                        {
+                            if (gizmo.m_targetObject == spine.partOf)
+                            {
+                                gizmo.changeTarget(hit.transform.parent.gameObject);
+                                cameraScript.changeTarget(hit.transform.parent.transform);
+                            } else
+                            {
+                                gizmo.changeTarget(spine.partOf);
+                                cameraScript.changeTarget(spine.partOf.transform);
+                            }
+                            
+                        } else
+                        {
+                            gizmo.changeTarget(hit.transform.parent.gameObject);
+                            cameraScript.changeTarget(hit.transform.parent.transform);
+                        }
+                    } else
+                    {
+                        gizmo.changeTarget(hit.transform.parent.gameObject);
+                        cameraScript.changeTarget(hit.transform.parent.transform);
+                    }
+                    
                     spine = hit.transform.GetComponentInParent<SpineObject>();
+                    cameraScript.changeTarget(hit.transform);
                     if (status == "scale")
                     {
                         sliders[0].SetValueWithoutNotify(spine.radiousX);

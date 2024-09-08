@@ -206,7 +206,7 @@ namespace MarchingCubes {
             {
 
                 needsRecalculation = false;
-                t = 0.2f;
+                t = 0.1f;
                 UpdateMesh();
             }
             if (t > 0)
