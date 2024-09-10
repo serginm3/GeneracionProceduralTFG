@@ -23,8 +23,10 @@ namespace MarchingCubes {
         public List<Vector3> vertices;
         public List<int> triangles;
         public List<Transform> spines;
+        List<int> indices = new List<int>();
 
         List<Vector3> previousPositions = new List<Vector3>();
+        Dictionary<Vector3, int> weldMap = new Dictionary<Vector3, int>();
 
         public float[,,] weights;
 
@@ -121,6 +123,8 @@ namespace MarchingCubes {
             int y = (int) position.y;
             int z = (int) position.z;
 
+            Vector3 intVector = new Vector3(x,y,z);
+
             int cubeIndex = 0;
             if (weights[0 + x,0 + y,0 + z] < 1) cubeIndex |= 1;
             if (weights[1 + x, 0 + y, 0 + z] < 1) cubeIndex |= 2;
@@ -167,10 +171,22 @@ namespace MarchingCubes {
 
                     //Vector3 vertex = (edgeStart + edgeEnd) / 2;
                     Vector3 vertex = Vector3.Lerp(edgeEnd, edgeStart, weightEdge);
-                    
 
-                    vertices.Add(vertex);
-                    triangles.Add(vertices.Count - 1);
+                    int index;
+                    
+                    if (weldMap.TryGetValue(vertex, out index))
+                    {
+                        
+                        triangles.Add(index);
+                    }
+                    else
+                    {
+                        index = vertices.Count;
+                        weldMap.Add(vertex, index);
+                        vertices.Add(vertex);
+                        triangles.Add(index);
+                        
+                    }
 
                     edgeIndex++;
                 }
@@ -225,6 +241,7 @@ namespace MarchingCubes {
             mesh.triangles = triangles.ToArray();
 
             mesh.RecalculateNormals();
+            calculateNormalsManaged(vertices.ToArray(),mesh.normals.ToArray(), triangles.ToArray());
 
 
         }
@@ -308,6 +325,7 @@ namespace MarchingCubes {
         public void UpdateMesh()
         {
             //Debug.Log("Updating mesh");
+            weldMap = new Dictionary<Vector3, int>();
             SetWeight();
             vertices = new List<Vector3>();
             triangles = new List<int>();
@@ -329,7 +347,40 @@ namespace MarchingCubes {
             CreateMesh();
             meshCollider.sharedMesh = mesh;
         }
+        void calculateNormalsManaged(Vector3[] verts, Vector3[] normals, int[] tris)
+        {
+            for (int i = 0; i < tris.Length; i += 3)
+            {
+                int tri0 = tris[i];
+                int tri1 = tris[i + 1];
+                int tri2 = tris[i + 2];
+                Vector3 vert0 = verts[tri0];
+                Vector3 vert1 = verts[tri1];
+                Vector3 vert2 = verts[tri2];
+                // Vector3 normal = Vector3.Cross(vert1 - vert0, vert2 - vert0);
+                Vector3 normal = new Vector3()
+                {
+                    x = vert0.y * vert1.z - vert0.y * vert2.z - vert1.y * vert0.z + vert1.y * vert2.z + vert2.y * vert0.z - vert2.y * vert1.z,
+                    y = -vert0.x * vert1.z + vert0.x * vert2.z + vert1.x * vert0.z - vert1.x * vert2.z - vert2.x * vert0.z + vert2.x * vert1.z,
+                    z = vert0.x * vert1.y - vert0.x * vert2.y - vert1.x * vert0.y + vert1.x * vert2.y + vert2.x * vert0.y - vert2.x * vert1.y
+                };
+                normals[tri0] += normal;
+                normals[tri1] += normal;
+                normals[tri2] += normal;
+            }
+
+            for (int i = 0; i < normals.Length; i++)
+            {
+                // normals [i] = Vector3.Normalize (normals [i]);
+                Vector3 norm = normals[i];
+                float invlength = 1.0f / (float)System.Math.Sqrt(norm.x * norm.x + norm.y * norm.y + norm.z * norm.z);
+                normals[i].x = norm.x * invlength;
+                normals[i].y = norm.y * invlength;
+                normals[i].z = norm.z * invlength;
+            }
+        }
     }
+    
 }
 
     
