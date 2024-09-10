@@ -15,6 +15,7 @@ public class IUController : MonoBehaviour
     public string status;
     public GameObject segmentPrefab;
     public GizmoController gizmo;
+    public LayerMask Mask; // (or public Layermask Mask)
     void Start()
     {
         status = "scale";
@@ -94,10 +95,10 @@ public class IUController : MonoBehaviour
         {
             RaycastHit hit;
             
-            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit))
+            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity,Mask))
             {
-                Debug.Log(hit.transform.parent.name);
-                if (hit.transform.parent.tag == "Selectable") {
+                Debug.Log(hit.transform.gameObject.layer);
+                if (hit.transform.tag == "Selectable") {
                     CameraLogic cameraScript = Camera.main.GetComponent<CameraLogic>();
                     SpineObject spine = hit.transform.parent.GetComponent<SpineObject>();
                     if (spine != null)
@@ -111,8 +112,17 @@ public class IUController : MonoBehaviour
                                 cameraScript.changeTarget(hit.transform.parent.transform);
                             } else
                             {
-                                gizmo.changeTarget(spine.partOf);
-                                cameraScript.changeTarget(spine.partOf.transform);
+                                if (spine.partOf == gizmo.m_targetObject.GetComponent<SpineObject>().partOf)
+                                {
+                                    gizmo.changeTarget(hit.transform.parent.gameObject);
+                                    cameraScript.changeTarget(hit.transform.parent.transform);
+                                }
+                                else
+                                {
+                                    gizmo.changeTarget(spine.partOf);
+                                    cameraScript.changeTarget(spine.partOf.transform);
+                                }
+                                
                             }
                             
                         } else

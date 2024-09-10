@@ -261,7 +261,13 @@ namespace TransformGizmos
 
             (m_lastProjectedMousePosition, m_lastMousePosition) = TransformationsUtility.HandleMouseOutsideScreen(initialMousePosition, moveDirection);
 
+            SpineObject TempComponent = m_targetObject.GetComponent<SpineObject>();
+            if (TempComponent != null)
+            {
+                TempComponent.changeRadiousNeighbors();
+            }
             marchingCall.Invoke();
+            
 
             return (totalDist, m_lastProjectedMousePosition);
         }

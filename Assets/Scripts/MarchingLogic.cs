@@ -42,6 +42,7 @@ namespace MarchingCubes {
         Vector3 ScaledVector;
         float distance;
         // Start is called before the first frame update
+        MeshCollider meshCollider;
 
         void Awake()
         {
@@ -64,6 +65,8 @@ namespace MarchingCubes {
         }
         void Start()
         {
+            meshCollider = gameObject.AddComponent<MeshCollider>();
+            meshCollider.sharedMesh = mesh;
             for (int x = 0; x < surfaceArea; x++) //the line the error is pointing to
             {
                 for (int y = 0; y < surfaceHeight; y++) //the line the error is pointing to
@@ -324,6 +327,7 @@ namespace MarchingCubes {
 
 
             CreateMesh();
+            meshCollider.sharedMesh = mesh;
         }
     }
 }

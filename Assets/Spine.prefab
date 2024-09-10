@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8789322220370807373}
   - component: {fileID: 4886282730595463821}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spine
   m_TagString: Selectable
   m_Icon: {fileID: 0}
@@ -53,6 +53,7 @@ MonoBehaviour:
   rotationX: 0
   rotationY: 0
   rotationZ: 0
+  partOf: {fileID: 0}
 --- !u!1 &830028755427335646
 GameObject:
   m_ObjectHideFlags: 0
@@ -65,7 +66,7 @@ GameObject:
   - component: {fileID: 7700677390155106337}
   - component: {fileID: 4885120348385599201}
   - component: {fileID: 1306869611726929497}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Sphere
   m_TagString: Selectable
   m_Icon: {fileID: 0}

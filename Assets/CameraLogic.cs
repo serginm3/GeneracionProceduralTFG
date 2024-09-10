@@ -13,6 +13,8 @@ public class CameraLogic : MonoBehaviour
     public Vector3 position;
     public Vector3 targetPosition;
     public bool moving;
+
+    public GameObject Object;
     void Start()
     {
         position = transform.position;
@@ -38,6 +40,17 @@ public class CameraLogic : MonoBehaviour
             RotateCamera();
         }
 
+        if (Input.GetKeyUp(KeyCode.M))
+        {
+            RaycastHit hit;
+
+            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit))
+            {
+                Debug.Log(hit.transform.name);
+                Instantiate(Object, hit.point, Quaternion.LookRotation(hit.normal));
+            }
+        }
+
     }
 
     public void changeTarget(Transform newTarget)
@@ -61,7 +74,9 @@ public class CameraLogic : MonoBehaviour
                                             -Input.GetAxis("Mouse Y")*speed);
         }
 
-        // -------------------Code for Zooming Out------------
+        
+
+            // -------------------Code for Zooming Out------------
         if (Input.GetAxis("Mouse ScrollWheel") < 0)
         {
             if (Camera.main.fieldOfView <= 125)

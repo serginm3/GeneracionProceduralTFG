@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5347585467106957109}
   - component: {fileID: 6650030969296612255}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BezierControlPoint3
   m_TagString: Selectable
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5978786198510269737}
   - component: {fileID: 6580261017793235900}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AddPrevSeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 8101834554341905519}
   - component: {fileID: 6657079107592619553}
   - component: {fileID: 8260645306222128308}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Sphere
   m_TagString: Selectable
   m_Icon: {fileID: 0}
@@ -291,7 +291,7 @@ GameObject:
   - component: {fileID: 7718304662583725769}
   - component: {fileID: 4193881510873916817}
   - component: {fileID: 1823675724534908814}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -398,7 +398,7 @@ GameObject:
   - component: {fileID: 8027038447615181665}
   - component: {fileID: 5468144726121185161}
   - component: {fileID: 7882421543489368295}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Sphere
   m_TagString: Selectable
   m_Icon: {fileID: 0}
@@ -503,7 +503,7 @@ GameObject:
   m_Component:
   - component: {fileID: 101431528402486642}
   - component: {fileID: 1144190345539767219}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BezierControlPoint2
   m_TagString: Selectable
   m_Icon: {fileID: 0}
@@ -559,7 +559,7 @@ GameObject:
   - component: {fileID: 4110801550430089843}
   - component: {fileID: 3772892792793567473}
   - component: {fileID: 4559826288737058152}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Sphere (1)
   m_TagString: Selectable
   m_Icon: {fileID: 0}
@@ -664,7 +664,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5104450883982259603}
   - component: {fileID: 6981330563110103130}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AddNextSeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -720,7 +720,7 @@ GameObject:
   - component: {fileID: 6485231149804620152}
   - component: {fileID: 6772175572739253673}
   - component: {fileID: 5923065954932890349}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -825,7 +825,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2859405731558360465}
   - component: {fileID: 4568797163000855095}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BezierControlPoint4
   m_TagString: Selectable
   m_Icon: {fileID: 0}
@@ -879,7 +879,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6329112163322140935}
   - component: {fileID: 5291176036321842993}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BezierControlPoint1
   m_TagString: Selectable
   m_Icon: {fileID: 0}
@@ -935,7 +935,7 @@ GameObject:
   - component: {fileID: 3303463400458435885}
   - component: {fileID: 3866131620243318855}
   - component: {fileID: 8657637194584452180}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Sphere (1)
   m_TagString: Selectable
   m_Icon: {fileID: 0}
