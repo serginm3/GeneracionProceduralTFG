@@ -42,9 +42,11 @@ public class SpineObject : MonoBehaviour
 
     public void changeRadiousNeighbors()
     {
+
         float changeX = this.transform.localScale.x - radiousX;
         float changeY = this.transform.localScale.y - radiousY;
         float changeZ = this.transform.localScale.z - radiousZ;
+
         if (partOf != null)
         {
             GameObject[] spinesArray = partOf.GetComponent<SpineController>().spines;

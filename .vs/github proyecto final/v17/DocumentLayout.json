@@ -1,0 +1,469 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Eve\\Desktop\\github proyecto final\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|c:\\users\\eve\\desktop\\github proyecto final\\assets\\savecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|solutionrelative:assets\\savecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Eve\\Desktop\\github proyecto final\\Library\\PackageCache\\com.unity.ugui@2.0.0\\Runtime\\UGUI\\UI\\Core\\Button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.ugui@2.0.0\\Runtime\\UGUI\\UI\\Core\\Button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|C:\\Users\\Eve\\Desktop\\github proyecto final\\assets\\scripts\\marchinglogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\marchinglogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|C:\\Users\\Eve\\Desktop\\github proyecto final\\assets\\spineobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|solutionrelative:assets\\spineobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|C:\\Users\\Eve\\Desktop\\github proyecto final\\assets\\spinecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|solutionrelative:assets\\spinecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|C:\\Users\\Eve\\Desktop\\github proyecto final\\assets\\transform gizmos\\scripts\\translation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|solutionrelative:assets\\transform gizmos\\scripts\\translation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|C:\\Users\\Eve\\Desktop\\github proyecto final\\assets\\cameralogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|solutionrelative:assets\\cameralogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|C:\\Users\\Eve\\Desktop\\github proyecto final\\assets\\transform gizmos\\scripts\\gizmocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|solutionrelative:assets\\transform gizmos\\scripts\\gizmocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|C:\\Users\\Eve\\Desktop\\github proyecto final\\assets\\iucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|solutionrelative:assets\\iucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|C:\\Users\\Eve\\Desktop\\github proyecto final\\assets\\transform gizmos\\scripts\\scaling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|solutionrelative:assets\\transform gizmos\\scripts\\scaling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|C:\\Users\\Eve\\Desktop\\github proyecto final\\assets\\transform gizmos\\scripts\\rotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|solutionrelative:assets\\transform gizmos\\scripts\\rotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|C:\\Users\\Eve\\Desktop\\github proyecto final\\assets\\newbehaviourscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|solutionrelative:assets\\newbehaviourscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|C:\\Users\\Eve\\Desktop\\github proyecto final\\assets\\addspine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|solutionrelative:assets\\addspine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|C:\\Users\\Eve\\Desktop\\github proyecto final\\assets\\bonecreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|solutionrelative:assets\\bonecreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Eve\\Desktop\\github proyecto final\\Library\\PackageCache\\com.unity.formats.fbx@5.1.1\\Editor\\FbxExporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.formats.fbx@5.1.1\\Editor\\FbxExporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|C:\\Users\\Eve\\Desktop\\github proyecto final\\assets\\torec\\subdivision\\assets\\subdivision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|solutionrelative:assets\\torec\\subdivision\\assets\\subdivision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|C:\\Users\\Eve\\Desktop\\github proyecto final\\assets\\scripts\\marchingtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\marchingtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|C:\\Users\\Eve\\Desktop\\github proyecto final\\assets\\fantasy skybox free\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|solutionrelative:assets\\fantasy skybox free\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|C:\\Users\\Eve\\Desktop\\github proyecto final\\assets\\scripts\\creaturegeneratorcontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\creaturegeneratorcontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|C:\\Users\\Eve\\Desktop\\github proyecto final\\assets\\catmullclarksubdivision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|solutionrelative:assets\\catmullclarksubdivision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|C:\\Users\\Eve\\Desktop\\github proyecto final\\assets\\torec\\subdivision\\demo\\subdivisiondemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|solutionrelative:assets\\torec\\subdivision\\demo\\subdivisiondemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|C:\\Users\\Eve\\Desktop\\github proyecto final\\assets\\torec\\subdivision\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|solutionrelative:assets\\torec\\subdivision\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|C:\\Users\\Eve\\Desktop\\github proyecto final\\assets\\transform gizmos\\scripts\\rotationx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|solutionrelative:assets\\transform gizmos\\scripts\\rotationx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|C:\\Users\\Eve\\Desktop\\github proyecto final\\assets\\transform gizmos\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|solutionrelative:assets\\transform gizmos\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|C:\\Users\\Eve\\Desktop\\github proyecto final\\assets\\transform gizmos\\scripts\\scalingall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|solutionrelative:assets\\transform gizmos\\scripts\\scalingall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|C:\\Users\\Eve\\Desktop\\github proyecto final\\assets\\transform gizmos\\scripts\\gizmobigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|solutionrelative:assets\\transform gizmos\\scripts\\gizmobigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|C:\\Users\\Eve\\Desktop\\github proyecto final\\assets\\transform gizmos\\scripts\\igizmotransforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|solutionrelative:assets\\transform gizmos\\scripts\\igizmotransforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|C:\\Users\\Eve\\Desktop\\github proyecto final\\assets\\transform gizmos\\scripts\\transformationsutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79174B97-874E-072B-951A-A837D566F5B0}|Assembly-CSharp.csproj|solutionrelative:assets\\transform gizmos\\scripts\\transformationsutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Button.cs",
+              "DocumentMoniker": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Library\\PackageCache\\com.unity.ugui@2.0.0\\Runtime\\UGUI\\UI\\Core\\Button.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.ugui@2.0.0\\Runtime\\UGUI\\UI\\Core\\Button.cs",
+              "ToolTip": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Library\\PackageCache\\com.unity.ugui@2.0.0\\Runtime\\UGUI\\UI\\Core\\Button.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.ugui@2.0.0\\Runtime\\UGUI\\UI\\Core\\Button.cs",
+              "ViewState": "AQIAAIcAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T20:24:48.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GizmoController.cs",
+              "DocumentMoniker": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Transform Gizmos\\Scripts\\GizmoController.cs",
+              "RelativeDocumentMoniker": "Assets\\Transform Gizmos\\Scripts\\GizmoController.cs",
+              "ToolTip": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Transform Gizmos\\Scripts\\GizmoController.cs",
+              "RelativeToolTip": "Assets\\Transform Gizmos\\Scripts\\GizmoController.cs",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAtwIEAAAAeAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADtSURBVDhPYxgFCHDh4YX/sQtj/6u3qP9XblL\u002BHzk/8j9UiuHtx7f/VZpVwHxkNggwgohLjy79D18SzmAua86QZJbEwM/Bz3D91XWGCNMIRpAGo34jsGJkwMrMynCn9g5YP0PK0pT/3tO9/3/58gVuMjLA5wImEHH68WkGN3U3Bh4eHoiJJACwAb/\u002B/gI7CRuAeeH3398M8g3ycDayKxjC5oX9D54TjNX5IIDPC2Ann7x78n/E4ggGDw0PhgiDCLBrLj2/xJBhl0HQS3AFe67t\u002BT/lyBSGO2/uMHCxcTHYK9szdAd2kxwmIw8wMAAAESl0qwYO77cAAAAASUVORK5CYII=",
+              "WhenOpened": "2026-02-06T20:24:48.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IUController.cs",
+              "DocumentMoniker": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\IUController.cs",
+              "RelativeDocumentMoniker": "Assets\\IUController.cs",
+              "ToolTip": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\IUController.cs",
+              "RelativeToolTip": "Assets\\IUController.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAAADQAAABsAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADtSURBVDhPYxgFCHDh4YX/sQtj/6u3qP9XblL\u002BHzk/8j9UiuHtx7f/VZpVwHxkNggwgohLjy79D18SzmAua86QZJbEwM/Bz3D91XWGCNMIRpAGo34jsGJkwMrMynCn9g5YP0PK0pT/3tO9/3/58gVuMjLA5wImEHH68WkGN3U3Bh4eHoiJJACwAb/\u002B/gI7CRuAeeH3398M8g3ycDayKxjC5oX9D54TjNX5IIDPC2Ann7x78n/E4ggGDw0PhgiDCLBrLj2/xJBhl0HQS3AFe67t\u002BT/lyBSGO2/uMHCxcTHYK9szdAd2kxwmIw8wMAAAESl0qwYO77cAAAAASUVORK5CYII=",
+              "WhenOpened": "2026-02-06T20:24:48.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MarchingLogic.cs",
+              "DocumentMoniker": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Scripts\\MarchingLogic.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MarchingLogic.cs",
+              "ToolTip": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Scripts\\MarchingLogic.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MarchingLogic.cs",
+              "ViewState": "AQIAAOwAAAAAAAAAAAAAwAEBAACBAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADtSURBVDhPYxgFCHDh4YX/sQtj/6u3qP9XblL\u002BHzk/8j9UiuHtx7f/VZpVwHxkNggwgohLjy79D18SzmAua86QZJbEwM/Bz3D91XWGCNMIRpAGo34jsGJkwMrMynCn9g5YP0PK0pT/3tO9/3/58gVuMjLA5wImEHH68WkGN3U3Bh4eHoiJJACwAb/\u002B/gI7CRuAeeH3398M8g3ycDayKxjC5oX9D54TjNX5IIDPC2Ann7x78n/E4ggGDw0PhgiDCLBrLj2/xJBhl0HQS3AFe67t\u002BT/lyBSGO2/uMHCxcTHYK9szdAd2kxwmIw8wMAAAESl0qwYO77cAAAAASUVORK5CYII=",
+              "WhenOpened": "2026-02-06T20:24:48.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SpineController.cs",
+              "DocumentMoniker": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\SpineController.cs",
+              "RelativeDocumentMoniker": "Assets\\SpineController.cs",
+              "ToolTip": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\SpineController.cs",
+              "RelativeToolTip": "Assets\\SpineController.cs",
+              "ViewState": "AQIAAIoAAAAAAAAAAAD4v5wAAAA7AAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADtSURBVDhPYxgFCHDh4YX/sQtj/6u3qP9XblL\u002BHzk/8j9UiuHtx7f/VZpVwHxkNggwgohLjy79D18SzmAua86QZJbEwM/Bz3D91XWGCNMIRpAGo34jsGJkwMrMynCn9g5YP0PK0pT/3tO9/3/58gVuMjLA5wImEHH68WkGN3U3Bh4eHoiJJACwAb/\u002B/gI7CRuAeeH3398M8g3ycDayKxjC5oX9D54TjNX5IIDPC2Ann7x78n/E4ggGDw0PhgiDCLBrLj2/xJBhl0HQS3AFe67t\u002BT/lyBSGO2/uMHCxcTHYK9szdAd2kxwmIw8wMAAAESl0qwYO77cAAAAASUVORK5CYII=",
+              "WhenOpened": "2026-02-06T20:24:48.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "NewBehaviourScript.cs",
+              "DocumentMoniker": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\NewBehaviourScript.cs",
+              "RelativeDocumentMoniker": "Assets\\NewBehaviourScript.cs",
+              "ToolTip": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\NewBehaviourScript.cs",
+              "RelativeToolTip": "Assets\\NewBehaviourScript.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADtSURBVDhPYxgFCHDh4YX/sQtj/6u3qP9XblL\u002BHzk/8j9UiuHtx7f/VZpVwHxkNggwgohLjy79D18SzmAua86QZJbEwM/Bz3D91XWGCNMIRpAGo34jsGJkwMrMynCn9g5YP0PK0pT/3tO9/3/58gVuMjLA5wImEHH68WkGN3U3Bh4eHoiJJACwAb/\u002B/gI7CRuAeeH3398M8g3ycDayKxjC5oX9D54TjNX5IIDPC2Ann7x78n/E4ggGDw0PhgiDCLBrLj2/xJBhl0HQS3AFe67t\u002BT/lyBSGO2/uMHCxcTHYK9szdAd2kxwmIw8wMAAAESl0qwYO77cAAAAASUVORK5CYII=",
+              "WhenOpened": "2026-02-06T20:24:48.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Rotation.cs",
+              "DocumentMoniker": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Transform Gizmos\\Scripts\\Rotation.cs",
+              "RelativeDocumentMoniker": "Assets\\Transform Gizmos\\Scripts\\Rotation.cs",
+              "ToolTip": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Transform Gizmos\\Scripts\\Rotation.cs",
+              "RelativeToolTip": "Assets\\Transform Gizmos\\Scripts\\Rotation.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAqwFsAAABzAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADtSURBVDhPYxgFCHDh4YX/sQtj/6u3qP9XblL\u002BHzk/8j9UiuHtx7f/VZpVwHxkNggwgohLjy79D18SzmAua86QZJbEwM/Bz3D91XWGCNMIRpAGo34jsGJkwMrMynCn9g5YP0PK0pT/3tO9/3/58gVuMjLA5wImEHH68WkGN3U3Bh4eHoiJJACwAb/\u002B/gI7CRuAeeH3398M8g3ycDayKxjC5oX9D54TjNX5IIDPC2Ann7x78n/E4ggGDw0PhgiDCLBrLj2/xJBhl0HQS3AFe67t\u002BT/lyBSGO2/uMHCxcTHYK9szdAd2kxwmIw8wMAAAESl0qwYO77cAAAAASUVORK5CYII=",
+              "WhenOpened": "2026-02-06T20:24:48.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SaveController.cs",
+              "DocumentMoniker": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\SaveController.cs",
+              "RelativeDocumentMoniker": "Assets\\SaveController.cs",
+              "ToolTip": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\SaveController.cs",
+              "RelativeToolTip": "Assets\\SaveController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAB8AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T20:24:48.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CameraLogic.cs",
+              "DocumentMoniker": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\CameraLogic.cs",
+              "RelativeDocumentMoniker": "Assets\\CameraLogic.cs",
+              "ToolTip": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\CameraLogic.cs",
+              "RelativeToolTip": "Assets\\CameraLogic.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAowFYAAAAgAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADtSURBVDhPYxgFCHDh4YX/sQtj/6u3qP9XblL\u002BHzk/8j9UiuHtx7f/VZpVwHxkNggwgohLjy79D18SzmAua86QZJbEwM/Bz3D91XWGCNMIRpAGo34jsGJkwMrMynCn9g5YP0PK0pT/3tO9/3/58gVuMjLA5wImEHH68WkGN3U3Bh4eHoiJJACwAb/\u002B/gI7CRuAeeH3398M8g3ycDayKxjC5oX9D54TjNX5IIDPC2Ann7x78n/E4ggGDw0PhgiDCLBrLj2/xJBhl0HQS3AFe67t\u002BT/lyBSGO2/uMHCxcTHYK9szdAd2kxwmIw8wMAAAESl0qwYO77cAAAAASUVORK5CYII=",
+              "WhenOpened": "2026-02-06T20:24:48.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Scaling.cs",
+              "DocumentMoniker": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Transform Gizmos\\Scripts\\Scaling.cs",
+              "RelativeDocumentMoniker": "Assets\\Transform Gizmos\\Scripts\\Scaling.cs",
+              "ToolTip": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Transform Gizmos\\Scripts\\Scaling.cs",
+              "RelativeToolTip": "Assets\\Transform Gizmos\\Scripts\\Scaling.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAAArwGYAAABzAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADtSURBVDhPYxgFCHDh4YX/sQtj/6u3qP9XblL\u002BHzk/8j9UiuHtx7f/VZpVwHxkNggwgohLjy79D18SzmAua86QZJbEwM/Bz3D91XWGCNMIRpAGo34jsGJkwMrMynCn9g5YP0PK0pT/3tO9/3/58gVuMjLA5wImEHH68WkGN3U3Bh4eHoiJJACwAb/\u002B/gI7CRuAeeH3398M8g3ycDayKxjC5oX9D54TjNX5IIDPC2Ann7x78n/E4ggGDw0PhgiDCLBrLj2/xJBhl0HQS3AFe67t\u002BT/lyBSGO2/uMHCxcTHYK9szdAd2kxwmIw8wMAAAESl0qwYO77cAAAAASUVORK5CYII=",
+              "WhenOpened": "2026-02-06T20:24:48.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Translation.cs",
+              "DocumentMoniker": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Transform Gizmos\\Scripts\\Translation.cs",
+              "RelativeDocumentMoniker": "Assets\\Transform Gizmos\\Scripts\\Translation.cs",
+              "ToolTip": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Transform Gizmos\\Scripts\\Translation.cs",
+              "RelativeToolTip": "Assets\\Transform Gizmos\\Scripts\\Translation.cs",
+              "ViewState": "AQIAAIYAAAAAAAAAAAAswK4AAAB4AAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADtSURBVDhPYxgFCHDh4YX/sQtj/6u3qP9XblL\u002BHzk/8j9UiuHtx7f/VZpVwHxkNggwgohLjy79D18SzmAua86QZJbEwM/Bz3D91XWGCNMIRpAGo34jsGJkwMrMynCn9g5YP0PK0pT/3tO9/3/58gVuMjLA5wImEHH68WkGN3U3Bh4eHoiJJACwAb/\u002B/gI7CRuAeeH3398M8g3ycDayKxjC5oX9D54TjNX5IIDPC2Ann7x78n/E4ggGDw0PhgiDCLBrLj2/xJBhl0HQS3AFe67t\u002BT/lyBSGO2/uMHCxcTHYK9szdAd2kxwmIw8wMAAAESl0qwYO77cAAAAASUVORK5CYII=",
+              "WhenOpened": "2026-02-06T20:24:48.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SpineObject.cs",
+              "DocumentMoniker": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\SpineObject.cs",
+              "RelativeDocumentMoniker": "Assets\\SpineObject.cs",
+              "ToolTip": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\SpineObject.cs",
+              "RelativeToolTip": "Assets\\SpineObject.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAE4AAAACAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADtSURBVDhPYxgFCHDh4YX/sQtj/6u3qP9XblL\u002BHzk/8j9UiuHtx7f/VZpVwHxkNggwgohLjy79D18SzmAua86QZJbEwM/Bz3D91XWGCNMIRpAGo34jsGJkwMrMynCn9g5YP0PK0pT/3tO9/3/58gVuMjLA5wImEHH68WkGN3U3Bh4eHoiJJACwAb/\u002B/gI7CRuAeeH3398M8g3ycDayKxjC5oX9D54TjNX5IIDPC2Ann7x78n/E4ggGDw0PhgiDCLBrLj2/xJBhl0HQS3AFe67t\u002BT/lyBSGO2/uMHCxcTHYK9szdAd2kxwmIw8wMAAAESl0qwYO77cAAAAASUVORK5CYII=",
+              "WhenOpened": "2026-02-06T20:24:48.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BoneCreator.cs",
+              "DocumentMoniker": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\BoneCreator.cs",
+              "RelativeDocumentMoniker": "Assets\\BoneCreator.cs",
+              "ToolTip": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\BoneCreator.cs",
+              "RelativeToolTip": "Assets\\BoneCreator.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAgwEYAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADtSURBVDhPYxgFCHDh4YX/sQtj/6u3qP9XblL\u002BHzk/8j9UiuHtx7f/VZpVwHxkNggwgohLjy79D18SzmAua86QZJbEwM/Bz3D91XWGCNMIRpAGo34jsGJkwMrMynCn9g5YP0PK0pT/3tO9/3/58gVuMjLA5wImEHH68WkGN3U3Bh4eHoiJJACwAb/\u002B/gI7CRuAeeH3398M8g3ycDayKxjC5oX9D54TjNX5IIDPC2Ann7x78n/E4ggGDw0PhgiDCLBrLj2/xJBhl0HQS3AFe67t\u002BT/lyBSGO2/uMHCxcTHYK9szdAd2kxwmIw8wMAAAESl0qwYO77cAAAAASUVORK5CYII=",
+              "WhenOpened": "2026-02-06T20:24:48.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "README.txt",
+              "DocumentMoniker": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Transform Gizmos\\README.txt",
+              "RelativeDocumentMoniker": "Assets\\Transform Gizmos\\README.txt",
+              "ToolTip": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Transform Gizmos\\README.txt",
+              "RelativeToolTip": "Assets\\Transform Gizmos\\README.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACgSURBVDhP7ZOxDcMgEEV/olgegFFomYMd6DCDYDoWomUUJnBBhHQhGCTHTto8CR0fcV/3i8Ov3KhCKZVTSqRG5nmG1hqc89pTqEJKmdd1JTWyLAumaYIxZmdyp3qKbdtgrUWMMdPTNYNCMXHOkQIeVCtCCLq9CSGgjVfivBgmKJ/7c8TlCD2nIrT0Ew0Gn0bu\u002BUe4sEwtjDF473dL9SXAEyOmPdqze1w1AAAAAElFTkSuQmCC",
+              "WhenOpened": "2026-02-06T20:24:48.974Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AddSpine.cs",
+              "DocumentMoniker": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\AddSpine.cs",
+              "RelativeDocumentMoniker": "Assets\\AddSpine.cs",
+              "ToolTip": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\AddSpine.cs",
+              "RelativeToolTip": "Assets\\AddSpine.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADtSURBVDhPYxgFCHDh4YX/sQtj/6u3qP9XblL\u002BHzk/8j9UiuHtx7f/VZpVwHxkNggwgohLjy79D18SzmAua86QZJbEwM/Bz3D91XWGCNMIRpAGo34jsGJkwMrMynCn9g5YP0PK0pT/3tO9/3/58gVuMjLA5wImEHH68WkGN3U3Bh4eHoiJJACwAb/\u002B/gI7CRuAeeH3398M8g3ycDayKxjC5oX9D54TjNX5IIDPC2Ann7x78n/E4ggGDw0PhgiDCLBrLj2/xJBhl0HQS3AFe67t\u002BT/lyBSGO2/uMHCxcTHYK9szdAd2kxwmIw8wMAAAESl0qwYO77cAAAAASUVORK5CYII=",
+              "WhenOpened": "2026-02-06T20:24:48.974Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FbxExporter.cs",
+              "DocumentMoniker": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Library\\PackageCache\\com.unity.formats.fbx@5.1.1\\Editor\\FbxExporter.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.formats.fbx@5.1.1\\Editor\\FbxExporter.cs",
+              "ToolTip": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Library\\PackageCache\\com.unity.formats.fbx@5.1.1\\Editor\\FbxExporter.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.formats.fbx@5.1.1\\Editor\\FbxExporter.cs",
+              "ViewState": "AQIAAFYPAAAAAAAAAAD4v2UPAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T20:24:48.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Readme.txt",
+              "DocumentMoniker": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Fantasy Skybox FREE\\Readme.txt",
+              "RelativeDocumentMoniker": "Assets\\Fantasy Skybox FREE\\Readme.txt",
+              "ToolTip": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Fantasy Skybox FREE\\Readme.txt",
+              "RelativeToolTip": "Assets\\Fantasy Skybox FREE\\Readme.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACgSURBVDhP7ZOxDcMgEEV/olgegFFomYMd6DCDYDoWomUUJnBBhHQhGCTHTto8CR0fcV/3i8Ov3KhCKZVTSqRG5nmG1hqc89pTqEJKmdd1JTWyLAumaYIxZmdyp3qKbdtgrUWMMdPTNYNCMXHOkQIeVCtCCLq9CSGgjVfivBgmKJ/7c8TlCD2nIrT0Ew0Gn0bu\u002BUe4sEwtjDF473dL9SXAEyOmPdqze1w1AAAAAElFTkSuQmCC",
+              "WhenOpened": "2026-02-06T20:24:48.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "RotationX.cs",
+              "DocumentMoniker": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Transform Gizmos\\Scripts\\RotationX.cs",
+              "RelativeDocumentMoniker": "Assets\\Transform Gizmos\\Scripts\\RotationX.cs",
+              "ToolTip": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Transform Gizmos\\Scripts\\RotationX.cs",
+              "RelativeToolTip": "Assets\\Transform Gizmos\\Scripts\\RotationX.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADtSURBVDhPYxgFCHDh4YX/sQtj/6u3qP9XblL\u002BHzk/8j9UiuHtx7f/VZpVwHxkNggwgohLjy79D18SzmAua86QZJbEwM/Bz3D91XWGCNMIRpAGo34jsGJkwMrMynCn9g5YP0PK0pT/3tO9/3/58gVuMjLA5wImEHH68WkGN3U3Bh4eHoiJJACwAb/\u002B/gI7CRuAeeH3398M8g3ycDayKxjC5oX9D54TjNX5IIDPC2Ann7x78n/E4ggGDw0PhgiDCLBrLj2/xJBhl0HQS3AFe67t\u002BT/lyBSGO2/uMHCxcTHYK9szdAd2kxwmIw8wMAAAESl0qwYO77cAAAAASUVORK5CYII=",
+              "WhenOpened": "2026-02-06T20:24:48.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "readme.txt",
+              "DocumentMoniker": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Torec\\Subdivision\\readme.txt",
+              "RelativeDocumentMoniker": "Assets\\Torec\\Subdivision\\readme.txt",
+              "ToolTip": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Torec\\Subdivision\\readme.txt",
+              "RelativeToolTip": "Assets\\Torec\\Subdivision\\readme.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACgSURBVDhP7ZOxDcMgEEV/olgegFFomYMd6DCDYDoWomUUJnBBhHQhGCTHTto8CR0fcV/3i8Ov3KhCKZVTSqRG5nmG1hqc89pTqEJKmdd1JTWyLAumaYIxZmdyp3qKbdtgrUWMMdPTNYNCMXHOkQIeVCtCCLq9CSGgjVfivBgmKJ/7c8TlCD2nIrT0Ew0Gn0bu\u002BUe4sEwtjDF473dL9SXAEyOmPdqze1w1AAAAAElFTkSuQmCC",
+              "WhenOpened": "2026-02-06T20:24:48.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Subdivision.cs",
+              "DocumentMoniker": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Torec\\Subdivision\\Assets\\Subdivision.cs",
+              "RelativeDocumentMoniker": "Assets\\Torec\\Subdivision\\Assets\\Subdivision.cs",
+              "ToolTip": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Torec\\Subdivision\\Assets\\Subdivision.cs",
+              "RelativeToolTip": "Assets\\Torec\\Subdivision\\Assets\\Subdivision.cs",
+              "ViewState": "AQIAAGMDAAAAAAAAAAAIwIcDAABDAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADtSURBVDhPYxgFCHDh4YX/sQtj/6u3qP9XblL\u002BHzk/8j9UiuHtx7f/VZpVwHxkNggwgohLjy79D18SzmAua86QZJbEwM/Bz3D91XWGCNMIRpAGo34jsGJkwMrMynCn9g5YP0PK0pT/3tO9/3/58gVuMjLA5wImEHH68WkGN3U3Bh4eHoiJJACwAb/\u002B/gI7CRuAeeH3398M8g3ycDayKxjC5oX9D54TjNX5IIDPC2Ann7x78n/E4ggGDw0PhgiDCLBrLj2/xJBhl0HQS3AFe67t\u002BT/lyBSGO2/uMHCxcTHYK9szdAd2kxwmIw8wMAAAESl0qwYO77cAAAAASUVORK5CYII=",
+              "WhenOpened": "2026-02-06T20:24:48.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MarchingTable.cs",
+              "DocumentMoniker": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Scripts\\MarchingTable.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MarchingTable.cs",
+              "ToolTip": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Scripts\\MarchingTable.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MarchingTable.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAQwCkAAAAQAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADtSURBVDhPYxgFCHDh4YX/sQtj/6u3qP9XblL\u002BHzk/8j9UiuHtx7f/VZpVwHxkNggwgohLjy79D18SzmAua86QZJbEwM/Bz3D91XWGCNMIRpAGo34jsGJkwMrMynCn9g5YP0PK0pT/3tO9/3/58gVuMjLA5wImEHH68WkGN3U3Bh4eHoiJJACwAb/\u002B/gI7CRuAeeH3398M8g3ycDayKxjC5oX9D54TjNX5IIDPC2Ann7x78n/E4ggGDw0PhgiDCLBrLj2/xJBhl0HQS3AFe67t\u002BT/lyBSGO2/uMHCxcTHYK9szdAd2kxwmIw8wMAAAESl0qwYO77cAAAAASUVORK5CYII=",
+              "WhenOpened": "2026-02-06T20:24:48.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CatmullClarkSubdivision.cs",
+              "DocumentMoniker": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\CatmullClarkSubdivision.cs",
+              "RelativeDocumentMoniker": "Assets\\CatmullClarkSubdivision.cs",
+              "ToolTip": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\CatmullClarkSubdivision.cs",
+              "RelativeToolTip": "Assets\\CatmullClarkSubdivision.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBAAAAALAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADtSURBVDhPYxgFCHDh4YX/sQtj/6u3qP9XblL\u002BHzk/8j9UiuHtx7f/VZpVwHxkNggwgohLjy79D18SzmAua86QZJbEwM/Bz3D91XWGCNMIRpAGo34jsGJkwMrMynCn9g5YP0PK0pT/3tO9/3/58gVuMjLA5wImEHH68WkGN3U3Bh4eHoiJJACwAb/\u002B/gI7CRuAeeH3398M8g3ycDayKxjC5oX9D54TjNX5IIDPC2Ann7x78n/E4ggGDw0PhgiDCLBrLj2/xJBhl0HQS3AFe67t\u002BT/lyBSGO2/uMHCxcTHYK9szdAd2kxwmIw8wMAAAESl0qwYO77cAAAAASUVORK5CYII=",
+              "WhenOpened": "2026-02-06T20:24:48.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CreatureGeneratorController1.cs",
+              "DocumentMoniker": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Scripts\\CreatureGeneratorController1.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CreatureGeneratorController1.cs",
+              "ToolTip": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Scripts\\CreatureGeneratorController1.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CreatureGeneratorController1.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAwwEcAAAAZAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADtSURBVDhPYxgFCHDh4YX/sQtj/6u3qP9XblL\u002BHzk/8j9UiuHtx7f/VZpVwHxkNggwgohLjy79D18SzmAua86QZJbEwM/Bz3D91XWGCNMIRpAGo34jsGJkwMrMynCn9g5YP0PK0pT/3tO9/3/58gVuMjLA5wImEHH68WkGN3U3Bh4eHoiJJACwAb/\u002B/gI7CRuAeeH3398M8g3ycDayKxjC5oX9D54TjNX5IIDPC2Ann7x78n/E4ggGDw0PhgiDCLBrLj2/xJBhl0HQS3AFe67t\u002BT/lyBSGO2/uMHCxcTHYK9szdAd2kxwmIw8wMAAAESl0qwYO77cAAAAASUVORK5CYII=",
+              "WhenOpened": "2026-02-06T20:24:48.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "SubdivisionDemo.cs",
+              "DocumentMoniker": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Torec\\Subdivision\\Demo\\SubdivisionDemo.cs",
+              "RelativeDocumentMoniker": "Assets\\Torec\\Subdivision\\Demo\\SubdivisionDemo.cs",
+              "ToolTip": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Torec\\Subdivision\\Demo\\SubdivisionDemo.cs",
+              "RelativeToolTip": "Assets\\Torec\\Subdivision\\Demo\\SubdivisionDemo.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB8AAABOAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADtSURBVDhPYxgFCHDh4YX/sQtj/6u3qP9XblL\u002BHzk/8j9UiuHtx7f/VZpVwHxkNggwgohLjy79D18SzmAua86QZJbEwM/Bz3D91XWGCNMIRpAGo34jsGJkwMrMynCn9g5YP0PK0pT/3tO9/3/58gVuMjLA5wImEHH68WkGN3U3Bh4eHoiJJACwAb/\u002B/gI7CRuAeeH3398M8g3ycDayKxjC5oX9D54TjNX5IIDPC2Ann7x78n/E4ggGDw0PhgiDCLBrLj2/xJBhl0HQS3AFe67t\u002BT/lyBSGO2/uMHCxcTHYK9szdAd2kxwmIw8wMAAAESl0qwYO77cAAAAASUVORK5CYII=",
+              "WhenOpened": "2026-02-06T20:24:48.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "TransformationsUtility.cs",
+              "DocumentMoniker": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Transform Gizmos\\Scripts\\TransformationsUtility.cs",
+              "RelativeDocumentMoniker": "Assets\\Transform Gizmos\\Scripts\\TransformationsUtility.cs",
+              "ToolTip": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Transform Gizmos\\Scripts\\TransformationsUtility.cs",
+              "RelativeToolTip": "Assets\\Transform Gizmos\\Scripts\\TransformationsUtility.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADtSURBVDhPYxgFCHDh4YX/sQtj/6u3qP9XblL\u002BHzk/8j9UiuHtx7f/VZpVwHxkNggwgohLjy79D18SzmAua86QZJbEwM/Bz3D91XWGCNMIRpAGo34jsGJkwMrMynCn9g5YP0PK0pT/3tO9/3/58gVuMjLA5wImEHH68WkGN3U3Bh4eHoiJJACwAb/\u002B/gI7CRuAeeH3398M8g3ycDayKxjC5oX9D54TjNX5IIDPC2Ann7x78n/E4ggGDw0PhgiDCLBrLj2/xJBhl0HQS3AFe67t\u002BT/lyBSGO2/uMHCxcTHYK9szdAd2kxwmIw8wMAAAESl0qwYO77cAAAAASUVORK5CYII=",
+              "WhenOpened": "2026-02-06T20:24:48.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "GizmoBigger.cs",
+              "DocumentMoniker": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Transform Gizmos\\Scripts\\GizmoBigger.cs",
+              "RelativeDocumentMoniker": "Assets\\Transform Gizmos\\Scripts\\GizmoBigger.cs",
+              "ToolTip": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Transform Gizmos\\Scripts\\GizmoBigger.cs",
+              "RelativeToolTip": "Assets\\Transform Gizmos\\Scripts\\GizmoBigger.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAnAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADtSURBVDhPYxgFCHDh4YX/sQtj/6u3qP9XblL\u002BHzk/8j9UiuHtx7f/VZpVwHxkNggwgohLjy79D18SzmAua86QZJbEwM/Bz3D91XWGCNMIRpAGo34jsGJkwMrMynCn9g5YP0PK0pT/3tO9/3/58gVuMjLA5wImEHH68WkGN3U3Bh4eHoiJJACwAb/\u002B/gI7CRuAeeH3398M8g3ycDayKxjC5oX9D54TjNX5IIDPC2Ann7x78n/E4ggGDw0PhgiDCLBrLj2/xJBhl0HQS3AFe67t\u002BT/lyBSGO2/uMHCxcTHYK9szdAd2kxwmIw8wMAAAESl0qwYO77cAAAAASUVORK5CYII=",
+              "WhenOpened": "2026-02-06T20:24:48.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IGizmoTransforms.cs",
+              "DocumentMoniker": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Transform Gizmos\\Scripts\\IGizmoTransforms.cs",
+              "RelativeDocumentMoniker": "Assets\\Transform Gizmos\\Scripts\\IGizmoTransforms.cs",
+              "ToolTip": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Transform Gizmos\\Scripts\\IGizmoTransforms.cs",
+              "RelativeToolTip": "Assets\\Transform Gizmos\\Scripts\\IGizmoTransforms.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADtSURBVDhPYxgFCHDh4YX/sQtj/6u3qP9XblL\u002BHzk/8j9UiuHtx7f/VZpVwHxkNggwgohLjy79D18SzmAua86QZJbEwM/Bz3D91XWGCNMIRpAGo34jsGJkwMrMynCn9g5YP0PK0pT/3tO9/3/58gVuMjLA5wImEHH68WkGN3U3Bh4eHoiJJACwAb/\u002B/gI7CRuAeeH3398M8g3ycDayKxjC5oX9D54TjNX5IIDPC2Ann7x78n/E4ggGDw0PhgiDCLBrLj2/xJBhl0HQS3AFe67t\u002BT/lyBSGO2/uMHCxcTHYK9szdAd2kxwmIw8wMAAAESl0qwYO77cAAAAASUVORK5CYII=",
+              "WhenOpened": "2026-02-06T20:24:48.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ScalingAll.cs",
+              "DocumentMoniker": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Transform Gizmos\\Scripts\\ScalingAll.cs",
+              "RelativeDocumentMoniker": "Assets\\Transform Gizmos\\Scripts\\ScalingAll.cs",
+              "ToolTip": "C:\\Users\\Eve\\Desktop\\github proyecto final\\Assets\\Transform Gizmos\\Scripts\\ScalingAll.cs",
+              "RelativeToolTip": "Assets\\Transform Gizmos\\Scripts\\ScalingAll.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADtSURBVDhPYxgFCHDh4YX/sQtj/6u3qP9XblL\u002BHzk/8j9UiuHtx7f/VZpVwHxkNggwgohLjy79D18SzmAua86QZJbEwM/Bz3D91XWGCNMIRpAGo34jsGJkwMrMynCn9g5YP0PK0pT/3tO9/3/58gVuMjLA5wImEHH68WkGN3U3Bh4eHoiJJACwAb/\u002B/gI7CRuAeeH3398M8g3ycDayKxjC5oX9D54TjNX5IIDPC2Ann7x78n/E4ggGDw0PhgiDCLBrLj2/xJBhl0HQS3AFe67t\u002BT/lyBSGO2/uMHCxcTHYK9szdAd2kxwmIw8wMAAAESl0qwYO77cAAAAASUVORK5CYII=",
+              "WhenOpened": "2026-02-06T20:24:48.983Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

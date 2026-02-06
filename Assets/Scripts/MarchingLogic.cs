@@ -14,116 +14,96 @@ namespace MarchingCubes {
     [RequireComponent(typeof(MeshFilter))]
     public class MarchingLogic : MonoBehaviour
     {
-        public int surfaceArea = 10;
-        public int surfaceHeight = 10;
-        public int surfacewidth = 10;
-        public int MarchingArea = 1;
-        public float offSet = 0.5f;
+        public int surfaceLength = 40;
+        public int surfaceHeight = 40;
+        public int surfaceWidth = 40;
+        public float[,,] weights;
 
         public List<Vector3> vertices;
         public List<int> triangles;
+
+        Mesh mesh;
+        MeshCollider meshCollider;
+
         public List<Transform> spines;
-        List<int> indices = new List<int>();
 
         List<Vector3> previousPositions = new List<Vector3>();
         Dictionary<Vector3, int> weldMap = new Dictionary<Vector3, int>();
 
-        public float[,,] weights;
+        MeshFilter meshFilter;
 
         public float t = 0;
 
-        Mesh mesh;
+        public CatmullClarkSubdivision subdivision;
 
         public bool needsRecalculation= true;
-
-        LineRenderer lr;
 
         Vector3 point;
         Matrix4x4 rotationMatrix;
         Vector3 point2;
         Vector3 ScaledVector;
         float distance;
-        // Start is called before the first frame update
-        MeshCollider meshCollider;
 
         void Awake()
         {
-            GetChilds();
-            SetWeight();
-            mesh = GetComponent<MeshFilter>().mesh;
-
-            //MakeMeshData();
-            CreateMesh();
-
             
 
-
-            
-
-            //MarchCube(new Vector3());
+            //Creamos la mesh a partir de las weights asignadas antes
+            //CreateMesh();
 
             Debug.Log(MarchingTable.Triangles.Length);
-            //Debug.Log(edges.ToString());
         }
         void Start()
         {
+            //Guardamos el meshFilter en una variable
+            mesh = new Mesh();
+            
+
+            //Guardamos el componente meshCollider en una variable
             meshCollider = gameObject.AddComponent<MeshCollider>();
+            //Conseguimos todos los hijos del objeto
+            GetChilds();
+            //Asignamos los valores al espacio de puntos de Marching cubes
+            SetWeight();
+            //Asignamos la mesh procedural al collider
             meshCollider.sharedMesh = mesh;
-            for (int x = 0; x < surfaceArea; x++) //the line the error is pointing to
+            //Iteramos todos los puntos dentro del espacio de marching cubes
+            for (int x = 0; x < surfaceLength; x++) 
             {
-                for (int y = 0; y < surfaceHeight; y++) //the line the error is pointing to
+                for (int y = 0; y < surfaceHeight; y++) 
                 {
-                    for (int z = 0; z < surfacewidth; z++) //the line the error is pointing to
+                    for (int z = 0; z < surfaceWidth; z++)
                     {
-                        
+                        //Hacemos un paso del cubo para generar la mesh
                         MarchCube(new Vector3(x,y,z));
 
                     }
                 }
             }
-            Debug.DrawLine(new Vector3(0, 0, 0), new Vector3(0, 5, 0));
 
         }
 
         void OnDrawGizmosSelected()
         {
-            for (int x = 0; x < surfaceArea; x++) //the line the error is pointing to
+            for (int x = 0; x < surfaceLength; x++) //the line the error is pointing to
             {
                 for (int y = 0; y < surfaceHeight; y++) //the line the error is pointing to
                 {
-                    for (int z = 0; z < surfacewidth; z++) //the line the error is pointing to
+                    for (int z = 0; z < surfaceWidth; z++) //the line the error is pointing to
                     {
-                        //enemies*.active = true;	*
-                        /*
-                        if (weights[x, y, z] >= 1)
-                        {
-                            Gizmos.color = Color.yellow;
-                        }
-                        else
-                        {
-                            Gizmos.color = Color.red;
-                        }
-                        */
                         Gizmos.color = UnityEngine.Color.Lerp(UnityEngine.Color.black, UnityEngine.Color.white, weights[x, y, z]);
-
-
                         Gizmos.DrawSphere(new Vector3(0f+x, 0f+y, 0f+z), Mathf.Lerp(0.01f,0.2f, weights[x, y, z]));
                     }
                 }
             }
 
-            // Draw a yellow sphere at the transform's position
-
         }
 
         public void MarchCube(Vector3 position)
         {
-            //GetChilds();
             int x = (int) position.x;
             int y = (int) position.y;
             int z = (int) position.z;
-
-            Vector3 intVector = new Vector3(x,y,z);
 
             int cubeIndex = 0;
             if (weights[0 + x,0 + y,0 + z] < 1) cubeIndex |= 1;
@@ -135,8 +115,6 @@ namespace MarchingCubes {
             if (weights[1 + x, 1 + y, 1 + z] < 1) cubeIndex |= 64;
             if (weights[0 + x, 1 + y, 1 + z] < 1) cubeIndex |= 128;
 
-            //int[] edges = MarchingTable.Triangles[cubeIndex];
-
             if (cubeIndex == 0 || cubeIndex == 255)
             {
                 return;
@@ -147,6 +125,7 @@ namespace MarchingCubes {
             {
                 for (int v = 0; v < 3; v++)
                 {
+
                     int triTableValue = MarchingTable.Triangles[cubeIndex, edgeIndex];
 
                     if (triTableValue == -1)
@@ -159,22 +138,17 @@ namespace MarchingCubes {
 
                     float weightEdge = weights[(int)edgeStart.x, (int)edgeStart.y, (int)edgeStart.z] - weights[(int)edgeEnd.x, (int)edgeEnd.y, (int)edgeEnd.z];
 
-
-                    
-
                     if (weightEdge < 0)
                     {
                         weightEdge = 1 + weightEdge;
                     }
 
-                    
 
-                    //Vector3 vertex = (edgeStart + edgeEnd) / 2;
                     Vector3 vertex = Vector3.Lerp(edgeEnd, edgeStart, weightEdge);
-
+                    //Vector3 vertex = (edgeStart + edgeEnd) / 2;
                     int index;
                     
-                    if (weldMap.TryGetValue(vertex, out index))
+                    if (weldMap.TryGetValue(edgeEnd + edgeStart, out index))
                     {
                         
                         triangles.Add(index);
@@ -182,7 +156,7 @@ namespace MarchingCubes {
                     else
                     {
                         index = vertices.Count;
-                        weldMap.Add(vertex, index);
+                        weldMap.Add(edgeEnd + edgeStart, index);
                         vertices.Add(vertex);
                         triangles.Add(index);
                         
@@ -228,6 +202,7 @@ namespace MarchingCubes {
                 t = 0.1f;
                 UpdateMesh();
             }
+
             if (t > 0)
             {
                 t -= Time.deltaTime;
@@ -236,75 +211,60 @@ namespace MarchingCubes {
         }
         void CreateMesh()
         {
-            mesh.Clear();
+            if(meshFilter == null)
+            {
+                meshFilter = GetComponent<MeshFilter>();
+            }
+            
+            //mesh.Clear();
+            mesh = new Mesh();
             mesh.vertices = vertices.ToArray();
             mesh.triangles = triangles.ToArray();
-
             mesh.RecalculateNormals();
-            calculateNormalsManaged(vertices.ToArray(),mesh.normals.ToArray(), triangles.ToArray());
-
-
+            meshFilter.mesh = mesh;
         }
+
         void SetWeight()
         {
-            weights = new float[surfaceArea + 1, surfaceHeight + 1, surfacewidth + 1];
+            //Creamos una array con las dimensiones asignadas al principio
+            weights = new float[surfaceLength + 1, surfaceHeight + 1, surfaceWidth + 1];
+            
             SpineObject spineComponent = null;
-
-
-
-                for (int x = 0; x < surfaceArea; x++) //the line the error is pointing to
+            //Iteramos cada punto dentro de weights por cada objeto hijo
+            for (int x = 0; x < surfaceLength; x++)
+            {
+                for (int y = 0; y < surfaceHeight; y++)
                 {
-                    for (int y = 0; y < surfaceHeight; y++) //the line the error is pointing to
+                    for (int z = 0; z < surfaceWidth; z++)
                     {
-                        for (int z = 0; z < surfacewidth; z++) //the line the error is pointing to
-                        {
                         
-                        for (int i = 0; i < spines.Count; i++) {
+                    for (int i = 0; i < spines.Count; i++) {
 
-                            spineComponent = spines[i].GetComponent<SpineObject>();
-                            point = new Vector3(x - spines[i].position.x, y - spines[i].position.y, z - spines[i].position.z);
-                            if (true){
-                                if (spineComponent.rotationX != 0 || spineComponent.rotationY != 0 || spineComponent.rotationZ != 0)
-                                {
-                                    rotationMatrix = Matrix4x4.Rotate(Quaternion.Euler(spineComponent.rotationX, spineComponent.rotationY, spineComponent.rotationZ)).inverse;
-                                    point2 = rotationMatrix.MultiplyPoint3x4(point);
-                                } else
-                                {
-                                    point2 = point;
-                                }
-                                ScaledVector = new Vector3(point2.x / spineComponent.radiousX, point2.y / spineComponent.radiousY, point2.z / spineComponent.radiousZ);
+                        spineComponent = spines[i].GetComponent<SpineObject>();
 
-                                
+                        point = new Vector3(x - spines[i].position.x, y - spines[i].position.y, z - spines[i].position.z);
 
-                                distance = spineComponent.scale - (ScaledVector).magnitude; //radio de la esfera
-                                weights[x, y, z] = Mathf.Max(Mathf.Clamp(distance / 2f, 0, 1), weights[x, y, z]);
-                            }else
-                            {
-                                float scale = spines[i].GetComponent<SpineObject>().scale;
-                                float a = spines[i].GetComponent<SpineObject>().radiousX * scale;
-                                float b = spines[i].GetComponent<SpineObject>().radiousY * scale;
-                                float c = spines[i].GetComponent<SpineObject>().radiousZ * scale;
+                        if (spineComponent.rotationX != 0 || spineComponent.rotationY != 0 || spineComponent.rotationZ != 0)
+                        {
 
-                                Matrix4x4 rotationMatrix = Matrix4x4.Rotate(Quaternion.Euler(spines[i].GetComponent<SpineObject>().rotationX, spines[i].GetComponent<SpineObject>().rotationY, spines[i].GetComponent<SpineObject>().rotationZ)).inverse;
-                                Vector3 point2 = rotationMatrix.MultiplyPoint3x4(point);
+                            rotationMatrix = Matrix4x4.Rotate(Quaternion.Euler(spineComponent.rotationX, spineComponent.rotationY, spineComponent.rotationZ)).inverse;
+                            point2 = rotationMatrix.MultiplyPoint3x4(point);
 
+                        } else
+                        {
+                            point2 = point;
+                        }
 
-                                float x2 = (point2.x * point2.x) / (a * a);
-                                float y2 = (point2.y * point2.y) / (b * b);
-                                float z2 = (point2.z * point2.z) / (c * c);
-                                //Debug.Log(new Vector3(x2, y2, z2));
-                                float distance = -((x2 + y2 + z2) - 2.0f);
+                        ScaledVector = new Vector3(point2.x / spineComponent.radiousX, point2.y / spineComponent.radiousY, point2.z / spineComponent.radiousZ);
 
+                        float radius = spineComponent.scale;
+                        float distanceToSurface = Mathf.Abs((ScaledVector).magnitude - radius);
 
+                        float weight = Mathf.Clamp01(spineComponent.scale - distanceToSurface);
 
-                                if (distance > 0)
-                                {
-                                    if (x >= 0 && x < weights.GetLength(0) && y >= 0 && y < weights.GetLength(1) && z >= 0 && z < weights.GetLength(2))
-                                    {
-                                        weights[x, y, z] = Mathf.Max(Mathf.Clamp(distance, 0, 1), weights[x, y, z]);
-                                    }
-                                }
-                            }
+                        weights[x, y, z] = Mathf.Max(weight, weights[x, y, z]);
+
+                        
                         }
                     }
                 }
@@ -324,17 +284,17 @@ namespace MarchingCubes {
 
         public void UpdateMesh()
         {
-            //Debug.Log("Updating mesh");
             weldMap = new Dictionary<Vector3, int>();
-            SetWeight();
             vertices = new List<Vector3>();
             triangles = new List<int>();
-            //MakeMeshData();
-            for (int x = 0; x < surfaceArea; x++) //the line the error is pointing to
+
+            SetWeight();
+
+            for (int x = 0; x < surfaceLength; x++) //the line the error is pointing to
             {
                 for (int y = 0; y < surfaceHeight; y++) //the line the error is pointing to
                 {
-                    for (int z = 0; z < surfacewidth; z++) //the line the error is pointing to
+                    for (int z = 0; z < surfaceWidth; z++) //the line the error is pointing to
                     {
 
                         MarchCube(new Vector3(x, y, z));
@@ -343,9 +303,7 @@ namespace MarchingCubes {
                 }
             }
 
-
             CreateMesh();
-            meshCollider.sharedMesh = mesh;
         }
         void calculateNormalsManaged(Vector3[] verts, Vector3[] normals, int[] tris)
         {
@@ -379,6 +337,7 @@ namespace MarchingCubes {
                 normals[i].z = norm.z * invlength;
             }
         }
+
     }
     
 }

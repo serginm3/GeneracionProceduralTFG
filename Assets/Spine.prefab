@@ -49,11 +49,12 @@ MonoBehaviour:
   radiousX: 1
   radiousY: 1
   radiousZ: 1
-  scale: 7
+  scale: 3
   rotationX: 0
   rotationY: 0
   rotationZ: 0
   partOf: {fileID: 0}
+  updateRadious: 0
 --- !u!1 &830028755427335646
 GameObject:
   m_ObjectHideFlags: 0

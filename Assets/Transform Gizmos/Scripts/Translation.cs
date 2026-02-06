@@ -9,6 +9,8 @@ namespace TransformGizmos
         Material m_clickedMaterial;
         Material m_transparentMaterial;
 
+        public CameraLogic cameraLogic;
+
         public float m_translateSpeed = 5;
         float m_gizmoSize = 1;
         float m_translateSpeedInternal;
@@ -185,6 +187,7 @@ namespace TransformGizmos
             (m_lastProjectedMousePosition, _) = TransformationsUtility.HandleMouseOutsideScreen(initialMousePosition, moveDirection);
 
             marchingCall.Invoke();
+            
 
             return (totalDist, m_lastProjectedMousePosition);
         }

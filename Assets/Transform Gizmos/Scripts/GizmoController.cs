@@ -20,6 +20,7 @@ namespace TransformGizmos
         [SerializeField] float m_gizmoSize = 1;
 
         Transformation m_transformation = Transformation.None;
+        public GameObject defaultO;
 
         enum Transformation
         {
@@ -135,5 +136,11 @@ namespace TransformGizmos
         {
             ChangeTransformationState(Transformation.Scale);
         }
+        public void RemoveTarget()
+        {
+            m_targetObject = defaultO;
+        }
     }
+
+    
 }
